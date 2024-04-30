@@ -2834,7 +2834,6 @@ PRODUCT_PACKAGES += \
     ImsRcsService \
     PowerOffAlarm \
     QCC \
-    QtiTelephony \
     QtiTelephonyService \
     WfdService \
     ims \
