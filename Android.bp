@@ -406,7 +406,6 @@ dex_import {
 }
 
 prebuilt_etc_xml {
-<<<<<<< HEAD
 	name: "android.hardware.gnss-aidl-service-qti",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss-aidl-service-qti.xml",
@@ -467,15 +466,6 @@ prebuilt_etc_xml {
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-        name: "vendor.dolby.hardware.dms",
-        owner: "xiaomi",
-        src: "proprietary/vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml",
-        filename_from_src: true,
-        sub_dir: "vintf/manifest",
-        soc_specific: true,
 }
 
 prebuilt_etc_xml {
@@ -593,14 +583,7 @@ prebuilt_etc_xml {
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
-=======
-        name: "vendor.dolby.hardware.dms",
-        owner: "xiaomi",
-        src: "proprietary/vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml",
-        filename_from_src: true,
-        sub_dir: "vintf/manifest",
-        soc_specific: true,
->>>>>>> fdf8003 (marble: Use entire DMS stack from nuwa)
+
 }
 
 prebuilt_etc_xml {
