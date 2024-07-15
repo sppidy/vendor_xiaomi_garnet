@@ -2922,12 +2922,9 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     ImsRcsService \
-    MotoSignatureApp \
     PowerOffAlarm \
     QCC \
     QtiTelephonyService \
-    MotoDolbyDax3 \
-    MotorolaSettingsProvider \
     WfdService \
     daxService \
     ims \
@@ -2937,11 +2934,6 @@ PRODUCT_PACKAGES += \
     uimgbamanagerlibrary \
     uimservicelibrary \
     com.android.hotwordenrollment.common.util \
-    com.motorola.frameworks.core.addon \
-    com.motorola.motosignature \
-    moto-checkin \
-    moto-settings \
-    moto \
     qcrilhook \
     vendor.qti.hardware.alarm-V1.0-java \
     vendor.qti.ims.connection-V1.0-java \
