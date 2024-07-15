@@ -2956,7 +2956,7 @@ PRODUCT_PACKAGES += \
     manifest_vendor.xiaomi.hardware.mfidoca \
     manifest_vendor.xiaomi.hardware.mlipay \
     manifest_vendor.xiaomi.hardware.mtdservice \
-    vendor.dolby.hardware.dms \
+    vendor.dolby.hardware.dms@2.0 \
     manifest_vendor.xiaomi.hardware.tidaservice \
     qtiradio-saidl \
     vendor.qti.diag.hal.service \
