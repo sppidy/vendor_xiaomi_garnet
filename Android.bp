@@ -132,6 +132,21 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
+cc_prebuilt_library_shared {
+    name: "libspatialaudio",
+    owner: "xiaomi",
+    relative_install_path: "soundfx",
+    target: {
+        android_arm: { srcs: [ "proprietary/vendor/lib/soundfx/libspatialaudio.so" ] },
+        android_arm64: { srcs: [ "proprietary/vendor/lib64/soundfx/libspatialaudio.so" ] }
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
+    prefer: true,
+    strip: { none: true },
+    soc_specific: true,
+}
+
 android_app_import {
 	name: "CACertService",
 	owner: "xiaomi",
@@ -302,8 +317,6 @@ android_app_import {
 	system_ext_specific: true,
 }
 
-
-
 android_app_import {
 	name: "WfdService",
 	owner: "xiaomi",
@@ -409,6 +422,13 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.ims.connectionaidlservice-V1-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.connectionaidlservice-V1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.ims.factory-V2.0-java",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar"],
@@ -426,6 +446,13 @@ dex_import {
 	name: "vendor.qti.ims.factory-V2.2-java",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.factoryaidlservice-V1-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factoryaidlservice-V1-java.jar"],
 	system_ext_specific: true,
 }
 
@@ -451,6 +478,13 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.ims.rcssipaidlservice-V1-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcssipaidlservice-V1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.ims.rcsuce-V1.0-java",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar"],
@@ -468,6 +502,13 @@ dex_import {
 	name: "vendor.qti.ims.rcsuce-V1.2-java",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsuceaidlservice-V1-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar"],
 	system_ext_specific: true,
 }
 
@@ -724,3 +765,9 @@ install_symlink {
 	symlink_target: "/vendor/lib64/egl/libq3dtools_adreno.so",
 }
 
+install_symlink {
+    name: "CneApp.libvndfwk_detect_jni.qti_vendor_symlink",
+    vendor: true,
+    installed_location: "app/CneApp/lib/arm64/libvndfwk_detect_jni.qti_vendor.so",
+    symlink_target: "/vendor/lib64/libvndfwk_detect_jni.qti_vendor.so",
+}
