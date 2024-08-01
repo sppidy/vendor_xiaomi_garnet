@@ -132,21 +132,6 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libspatialaudio",
-    owner: "xiaomi",
-    relative_install_path: "soundfx",
-    target: {
-        android_arm: { srcs: [ "proprietary/vendor/lib/soundfx/libspatialaudio.so" ] },
-        android_arm64: { srcs: [ "proprietary/vendor/lib64/soundfx/libspatialaudio.so" ] }
-    },
-    compile_multilib: "both",
-    check_elf_files: false,
-    prefer: true,
-    strip: { none: true },
-    soc_specific: true,
-}
-
 android_app_import {
 	name: "CACertService",
 	owner: "xiaomi",
